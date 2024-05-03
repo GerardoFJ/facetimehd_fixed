@@ -10,20 +10,21 @@ https://github.com/patjak/facetimehd/
 ## Installation
 
 ### Prerequisites
-
+- Install the next packages: `# apt install xz-utils curl cpio make linux-headers-generic git kmod libssl-dev checkinstall binwalk`
 - Get the AppleCameraInterface from your macos system [see tutorial](#tools)
 - Save the AppleCameraInterface into **osdriver** folder
 
 
 ### Ubuntu 22.04
-Full instalation    
+Full installation  
+*Note: You must have the AppleCameraInterface file on  **osdriver** 
 
     git clone https://github.com/GerardoFJ/facetimehd_fixed.git
     cd facetimehd_fixed
-    sudo ./installfacetimehd.sh
+    #run the following command as root or with sudo
+    ./installfacetimehd.sh
     
-
-
+You can try the camera with different software l
 
 ## Tools
 
@@ -33,4 +34,9 @@ This tool extract the firmware.bin file from the AppleCameraInterface
 
     git clone https://github.com/GerardoFJ/facetimehd_fixed.git
     cd facetimehd_fixed
-    sudo ./installfacetimehd.sh
+    ./extractfirmware.sh
+
+Note: The extracted file "firmware.bin" is located on **osdriver** by default.
+
+
+## Get AppleCameraInterface tutorial
